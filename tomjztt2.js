@@ -1,6 +1,6 @@
 const $ = new Env('tom九章1.11版 自动提0.3');
 
-jztoken = ''
+jztoken = 'WtN9IYNjUn9gPjCKhk2ieP8SYcX54abs'
 
 
 TOM = `https://tom666.coding.net/p/tom/d/tom/git/raw/master/csurl.json`
