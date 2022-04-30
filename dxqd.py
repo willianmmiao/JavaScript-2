@@ -15,17 +15,17 @@ from Crypto.Util.Padding import pad
 
 # 手机号
 config_list = [
-   {"mobile": "", "food": True}
+   {"mobile": "15606100019", "food": True}
 ]
 # 用户中心
 # 抓包url   https://wapside.189.cn:9001/jt-sign/api/home/homeInfo
 # home_info_body   {"para":"xx"}
-home_info_body = {}
+home_info_body = {"para":"1d9c241956e36dd7e8336455f34d36a6fa40021e633c5525436524c18e8d3443e7c1f3d524872d5a303b24cc0c32c7989b95ee8f959aa12820898ed16c05a1817c6664d4b378ef5ed15b245c6c779e4b6eded3536cdbae1569b2638c0d297b2b7200f8dca7f1de0775d04574935a07f9ede3f735351d0d494339c78bc25a1c4b4c905351d23eb9f15877821f39ec3fb8100da877fb5d24fb12263f7af37839b1064c8a1db8765f9c192c258959e2641b337c08d94cf66b55614d47b7aef72a76409e996a0e3157f20e2ba09da9cf8c74f09b656fe5755f246ceb3d8a111ec82dcbabbbf83f956db0ca66e5bc3b7ce6fd3ae084dbb9270ff7f191381c533cde12"}
 
 # 喂宠物
 # https://wapside.189.cn:9001/jt-sign/paradise/food
 # food_body   {"para":"xx"}
-food_body = {}
+food_body = {"para":"aa313b5e2c9ad08eed2a4631b108af2abd599074ea1a717d4d94a76ba7a85f9f4b74f36218da559e29970c4ea7c2cb3258aa1734cede7a3c88d303a3e669bbd739bb2890f994bc7fa5c3303e1243bf2c91ae3d1161112070766383c83a27e01919c0ce488534e0b9ce43ac8cafe598e123f8e4bf71fd04da31c3e4266213b49d"}
 
 
 # 分享  
@@ -34,27 +34,30 @@ food_body = {}
 #     'activityId': 'telecomrecommend01',
 #     'session': 'xxx'
 # }
-share_body = {}
+share_body = {
+      'activityId': 'telecomrecommend01
+      'session': '20220430125319784430788f031a14fd6a165f6f3e173ff00'
+}
 
 # 云盘
 # 'https://wapside.189.cn:9001/jt-sign/paradise/polymerize'
 # cloud_body = {"para":"xx"}
-cloud_body = {}
+cloud_body = {"para":"5af12c83cf7085a7ad3fb02c1b52add6b9053ec77e168edc743f74432dd6d9a9152853f392d50c74957b63b97de4d5efdc366b32240a96974ed36a2d3e66db8c224ef6e1789a4c3a17fc86c5037dc80890ac9aed4cdfec7147f6f4691f44525f877f2493293e1437b5b9c731df46e48e3df3cb09262c6c48ea043f0c929673447d8737f3ab5e9165155bf44eac975e40b73cc8470daa429a2a43472dbc24733f705e0bf277eb0b326c63d8bfded0b000f34e9f76c18558624164489e0647ff7e9214d791712d138e211f7b48683da081af408e62fb3e4f89174436c17653833ba5eaaaae260e8cfb84c3dafe5dd40b404fae8504f9fa51344860085e4a873311"}
 
 # 种树
 # 'https://wapside.189.cn:9001/jt-sign/paradise/polymerize'
 # tree_body = {"para":"xx"}
-tree_body = {}
+tree_body = {"para":"5af12c83cf7085a7ad3fb02c1b52add6b9053ec77e168edc743f74432dd6d9a9152853f392d50c74957b63b97de4d5efdc366b32240a96974ed36a2d3e66db8c224ef6e1789a4c3a17fc86c5037dc80890ac9aed4cdfec7147f6f4691f44525f877f2493293e1437b5b9c731df46e48e3df3cb09262c6c48ea043f0c929673447d8737f3ab5e9165155bf44eac975e40b73cc8470daa429a2a43472dbc24733f705e0bf277eb0b326c63d8bfded0b000f34e9f76c18558624164489e0647ff7e9214d791712d138e211f7b48683da081af408e62fb3e4f89174436c17653833ba5eaaaae260e8cfb84c3dafe5dd40b404fae8504f9fa51344860085e4a873311"}
 
 
 msg = []
 
 def telegram_bot(title, content):
     print("\n")
-    title = title  # 改成你要的标题内容
-    content = content  # 改成你要的正文内容
-    bot_token = ''
-    user_id = ''
+    title = 小枫电信签到  # 改成你要的标题内容
+    content = 签到通知来了  # 改成你要的正文内容
+    bot_token = '1610757066:AAET5OjZgXVb_CKOcj3O3j945D9cIAIhN-Y'
+    user_id = '1212068357'
 
     print("tg服务启动")
     url=f"https://api.telegram.org/bot{bot_token}/sendMessage"
