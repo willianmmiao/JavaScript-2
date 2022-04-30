@@ -54,8 +54,8 @@ msg = []
 
 def telegram_bot(title, content):
     print("\n")
-    title = 小枫电信签到  # 改成你要的标题内容
-    content = 签到通知来了  # 改成你要的正文内容
+    title = dianxinqiandao  # 改成你要的标题内容
+    content = qiandaotongzhi  # 改成你要的正文内容
     bot_token = '1610757066:AAET5OjZgXVb_CKOcj3O3j945D9cIAIhN-Y'
     user_id = '1212068357'
 
