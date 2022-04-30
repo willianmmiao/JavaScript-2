@@ -35,7 +35,7 @@ food_body = {"para":"aa313b5e2c9ad08eed2a4631b108af2abd599074ea1a717d4d94a76ba7a
 #     'session': 'xxx'
 # }
 share_body = {
-      'activityId': 'telecomrecommend01
+      'activityId': 'telecomrecommend01',
       'session': '20220430125319784430788f031a14fd6a165f6f3e173ff00'
 }
 
